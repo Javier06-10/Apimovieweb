@@ -121,7 +121,6 @@ const MovieDetail: React.FC = () => {
     </>
 
       <Card style={{ borderRadius: '10px' , boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' , backgroundColor: '#f0f2f5', color: '#000', border: '1px solid #d9d9d9', width: '50%' }}>
-    
         <Paragraph ellipsis={ellipsis ? { rows: 2, expandable: true, symbol: 'more' } : false}>{tvShow.description}</Paragraph>
         <Paragraph>
           <Text strong>Fecha de inicio:</Text> {tvShow.start_date}
@@ -147,9 +146,7 @@ const MovieDetail: React.FC = () => {
         <Paragraph>
           <Text strong>Enlace de YouTube:</Text> {tvShow.youtube_link ? <a href={tvShow.youtube_link} target="_blank" rel="noopener noreferrer">Ver trailer</a> : 'No disponible'}
         </Paragraph>
-      
       </Card>
-      
     </div>
     <Card style={{ marginTop: '20px', borderRadius: '10px' , boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' , backgroundColor: '#f0f2f5', color: '#000', border: '1px solid #d9d9d9', width: '100%', }}>
       <Title level={3}>Episodios</Title>
@@ -171,7 +168,6 @@ const MovieDetail: React.FC = () => {
         )}
       />
     </Card>
-    
     </>
     
   );
